@@ -16,13 +16,13 @@ import javax.mail.internet.MimeMultipart;
 
 public class Correo {
     
-    private final String email = "stafforu@gmail.com";
-    private final String emailPassword = "";
+    private final String email = "email@gmail.com";
+    private final String emailPassword = "password";
     private final String host = "smtp.gmail.com";
     private final String puerto_TLS_STARTTLS = "587";
     private final String puerto_SSL = "465";
 
-    public void sendEmail(String mensaje, String asunto, String destino) throws MessagingException,
+    public void sendEmail(String asunto, String mensaje, String destino) throws MessagingException,
             UnsupportedEncodingException {
         Properties mailPropiedad = new Properties();
         
